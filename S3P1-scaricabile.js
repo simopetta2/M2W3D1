@@ -153,3 +153,8 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function cutString(string) {
+    string = string.slice(1, -1)
+    return string
+}
+console.log(cutString('astronave'))
