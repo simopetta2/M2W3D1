@@ -67,24 +67,31 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function giveMeRandom(n) {
-    let array = []
-    for (let i = 0; i < n; i++) {
-        let randomNumber = Math.floor(Math.random() * 11)
-        while (array.includes(randomNumber)) {
-            randomNumber = Math.floor(Math.random() * 11)
-        }
-        array[i] = randomNumber
-    }
-    return array
-}
-console.log(giveMeRandom(10))
+// function giveMeRandom(n) {
+//     let array = []
+//     for (let i = 0; i < n; i++) {
+//         let randomNumber = Math.floor(Math.random() * 11)
+//         while (array.includes(randomNumber)) {
+//             randomNumber = Math.floor(Math.random() * 11)
+//         }
+//         array[i] = randomNumber
+//     }
+//     return array
+// }
+// console.log(giveMeRandom(10))
+
 //EXTRA:
 /* ESERCIZIO 1
  Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// function area(l1,l2){
+//   let areaResult = l1 * l2;
+// return areaResult
+// }
+// console.log(area(50,30))
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
@@ -93,12 +100,36 @@ console.log(giveMeRandom(10))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// function crazyDiff(num1) {
+//     let result = num1 - 19
+
+//     if (result >= 20) {
+//         result = (num1 - 19) * 3
+//     } else {
+//         result = num1 - 19
+//     }
+//     return result
+// }
+// console.log(crazyDiff(39))
+
+
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// function codify(string){
+//     let messaggio = 'code'
+//     let array = string.split(' ')
+//     if (array[0] === messaggio){
+//         return array.join(' ')
+//     } else {
+//         return messaggio +' '+ array.join(' ')
+//     }
+// }
+//    console.log(codify("code ciao a tutti sono simone"))
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -108,8 +139,17 @@ console.log(giveMeRandom(10))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// function check3and7(num) {
+//     if (num % 3 === 0 || num % 7 === 0) {
+//         return true
+//     }
+//     return false
+// }
+// console.log(check3and7(70))
+
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
